@@ -7,6 +7,7 @@ namespace agricola
 {
     public abstract class Tile
     {
+        private TileTypes type;
 
         /// <summary>
         /// The type of tile.
@@ -15,10 +16,11 @@ namespace agricola
         {
             get
             {
-                throw new System.NotImplementedException();
+                return type;
             }
             set
             {
+                this.type = value;
             }
         }
 
@@ -32,6 +34,8 @@ namespace agricola
                     return new FieldTile();
                 case TileTypes.Room:
                     return new RoomTile();
+                case TileTypes.Pasture:
+                    return new PastureTile();
                 default:
                     throw new ArgumentOutOfRangeException();
             }
@@ -56,14 +60,54 @@ namespace agricola
 
     public class RoomTile : Tile
     {
+        private RoomTypes roomType;
+
+        /// <summary>
+        /// Creates a new RoomTile.
+        /// </summary>
+        public RoomTile()
+        {
+            this.Type = TileTypes.Room;
+        }
+
+        /// <summary>
+        /// Indicates the type of room this tile represents.
+        /// </summary>
+        public RoomTypes RoomType
+        {
+            get
+            {
+                return this.roomType;
+            }
+            set
+            {
+                this.roomType = value;
+            }
+        }
     }
 
     public class EmptyTile : Tile
     {
+        /// <summary>
+        /// Creates a new EmptyTile.
+        /// </summary>
+        public EmptyTile()
+        {
+            this.Type = TileTypes.Empty;
+        }
     }
 
     public class FieldTile : Tile
     {
+        private bool wasPlantedThisTurn = false;
+        private PlantTypes plantType;
+        private int plantCount;
+
+        public FieldTile()
+        {
+            this.Type = TileTypes.Room;
+        }
+
         /// <summary>
         /// Indicates whether the plants on the tile were planted this turn.
         /// </summary>
@@ -71,10 +115,11 @@ namespace agricola
         {
             get
             {
-                throw new System.NotImplementedException();
+                return wasPlantedThisTurn;
             }
             set
             {
+                wasPlantedThisTurn = value;
             }
         }
 
@@ -85,10 +130,11 @@ namespace agricola
         {
             get
             {
-                throw new System.NotImplementedException();
+                return this.plantCount;
             }
             set
             {
+                this.plantCount = value;
             }
         }
 
@@ -99,16 +145,21 @@ namespace agricola
         {
             get
             {
-                throw new System.NotImplementedException();
+                return this.plantType;
             }
             set
             {
+                this.plantType = value;
             }
         }
     }
 
     public class PastureTile : Tile
     {
+        public PastureTile()
+        {
+            this.Type = TileTypes.Pasture;
+        }
         /// <summary>
         /// The type of livestock on the tile.
         /// </summary>

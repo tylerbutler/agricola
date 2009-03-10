@@ -52,7 +52,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Activity.cs" />
     <Compile Include="AllActivities.cs" />
     <Compile Include="Board.cs" />
     <Compile Include="BoardForm.cs">
@@ -61,8 +60,13 @@
     <Compile Include="BoardForm.Designer.cs">
       <DependentUpon>BoardForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="Major Improvements\CookingHearthCheap.cs" />
+    <Compile Include="Major Improvements\CookingHearthExpensive.cs" />
+    <Compile Include="Major Improvements\FireplaceCheap.cs" />
+    <Compile Include="Major Improvements\FireplaceExpensive.cs" />
     <Compile Include="GameManager.cs" />
     <Compile Include="Improvement.cs" />
+    <Compile Include="IResourceContainer.cs" />
     <Compile Include="LivestockTypes.cs" />
     <Compile Include="MainForm.cs">
       <SubType>Form</SubType>

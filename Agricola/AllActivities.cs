@@ -5,39 +5,50 @@ using System.Text;
 
 namespace agricola
 {
-    class DayLaborer : Activity
+    class DayLaborer : Refillable, IActivity
     {
-        #region Activity Members
+        private int food;
 
-        public string Name
+        public int Food
         {
             get
             {
-                throw new NotImplementedException();
+                return food;
             }
             set
             {
-                throw new NotImplementedException();
+                food = value;
             }
         }
-
-        public string Description
+        
+        #region Refillable Members
+        
+        public void Refill()
         {
-            get
-            {
-                throw new NotImplementedException();
-            }
-            set
-            {
-                throw new NotImplementedException();
-            }
-        }
-
-        public void ActivityAction()
-        {
-            throw new NotImplementedException();
+            this.Food++;
         }
 
         #endregion
+
+        #region IActivity Members
+
+        public void TakeAction( Player player, out object Data )
+        {
+            Data = null;
+            player.Food += this.Food;
+            this.Food = 0;
+        }
+
+        #endregion
+    }
+
+    public interface IActivity
+    {
+        void TakeAction( Player player, out object Data );
+    }
+
+    public interface Refillable
+    {
+        void Refill();
     }
 }
