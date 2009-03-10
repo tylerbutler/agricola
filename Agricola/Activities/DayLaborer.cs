@@ -5,7 +5,7 @@ using System.Text;
 
 namespace agricola
 {
-    class DayLaborer : Refillable, IActivity
+    class DayLaborer : IRefillable, IActivity
     {
         private int food;
 
@@ -20,9 +20,9 @@ namespace agricola
                 food = value;
             }
         }
-        
+
         #region Refillable Members
-        
+
         public void Refill()
         {
             this.Food++;
@@ -40,15 +40,5 @@ namespace agricola
         }
 
         #endregion
-    }
-
-    public interface IActivity
-    {
-        void TakeAction( Player player, out object Data );
-    }
-
-    public interface Refillable
-    {
-        void Refill();
     }
 }
