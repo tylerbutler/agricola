@@ -4,7 +4,11 @@ using System.Text;
 
 namespace agricola
 {
-    public abstract class Improvement
+    public enum ResourceTypes
     {
+        Reed,
+        Stone,
+        Wood,
+        Clay,
     }
 }

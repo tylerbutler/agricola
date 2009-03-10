@@ -31,6 +31,10 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Bitworthy.Utilities 1.0, Version=1.0.0.0, Culture=neutral, PublicKeyToken=851d9d8f7d21ede4, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>Assemblies\Bitworthy.Utilities 1.0.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core">
       <RequiredTargetFramework>3.5</RequiredTargetFramework>
@@ -49,7 +53,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Activity.cs" />
-    <Compile Include="ActivityAction.cs" />
+    <Compile Include="AllActivities.cs" />
     <Compile Include="Board.cs" />
     <Compile Include="BoardForm.cs">
       <SubType>Form</SubType>
@@ -59,7 +63,7 @@
     </Compile>
     <Compile Include="GameManager.cs" />
     <Compile Include="Improvement.cs" />
-    <Compile Include="ImprovementAction.cs" />
+    <Compile Include="LivestockTypes.cs" />
     <Compile Include="MainForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -68,6 +72,7 @@
     </Compile>
     <Compile Include="MajorImprovement.cs" />
     <Compile Include="MinorImprovement.cs" />
+    <Compile Include="PlantTypes.cs" />
     <Compile Include="Player.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -95,9 +100,15 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <Compile Include="ResourceTypes.cs" />
+    <Compile Include="RoomTypes.cs" />
+    <Compile Include="Tile.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Hofplan_001.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Assemblies\Bitworthy.Utilities 1.0.dll" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

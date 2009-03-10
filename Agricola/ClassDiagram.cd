@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<ClassDiagram MajorVersion="1" MinorVersion="1" MembersFormat="NameAndType">
+<ClassDiagram MajorVersion="1" MinorVersion="1" GroupingSetting="Alphabetical" MembersFormat="NameAndType">
   <Class Name="agricola.Player">
-    <Position X="9.25" Y="6.25" Width="2" />
+    <Position X="10.5" Y="8.75" Width="2" />
     <TypeIdentifier>
       <HashCode>AAEAAAAAAAAQAAAAAAAAAAQgAAQIAAAAEAAQAiYBAAA=</HashCode>
       <FileName>Player.cs</FileName>
@@ -11,66 +11,138 @@
     </ShowAsAssociation>
   </Class>
   <Class Name="agricola.GameManager" Collapsed="true">
-    <Position X="12.25" Y="0.5" Width="1.5" />
+    <Position X="15.25" Y="0.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA=</HashCode>
       <FileName>GameManager.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="agricola.Activity">
-    <Position X="2.5" Y="9.25" Width="1.5" />
-    <TypeIdentifier>
-      <HashCode>AAAAAAAAEAAgAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>Activity.cs</FileName>
-    </TypeIdentifier>
-    <ShowAsAssociation>
-      <Property Name="ActivityAction" />
-    </ShowAsAssociation>
-  </Class>
   <Class Name="agricola.Improvement">
-    <Position X="3" Y="2.5" Width="1.5" />
+    <Position X="2.25" Y="5.5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Improvement.cs</FileName>
     </TypeIdentifier>
-    <ShowAsAssociation>
-      <Property Name="ImprovementAction" />
-    </ShowAsAssociation>
   </Class>
   <Class Name="agricola.MajorImprovement">
-    <Position X="1.5" Y="4" Width="1.75" />
+    <Position X="0.75" Y="7" Width="1.75" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>MajorImprovement.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="agricola.MinorImprovement">
-    <Position X="4" Y="4" Width="1.75" />
+    <Position X="3.25" Y="7" Width="1.75" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>MinorImprovement.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="agricola.Board">
-    <Position X="6.5" Y="7.75" Width="1.5" />
+    <Position X="7.75" Y="9.75" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAgAAAAIAAAAAAAAAAAA=</HashCode>
       <FileName>Board.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Delegate Name="agricola.ActivityAction" Collapsed="true">
-    <Position X="2.5" Y="7.5" Width="1.5" />
+  <Class Name="agricola.DayLaborer" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="13.5" Y="0.5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>ActivityAction.cs</FileName>
+      <HashCode>AAAAAAAAEAAgAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>AllActivities.cs</FileName>
     </TypeIdentifier>
-  </Delegate>
-  <Delegate Name="agricola.ImprovementAction">
-    <Position X="3" Y="0.5" Width="1.75" />
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="agricola.Tile">
+    <Position X="4.25" Y="0.5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>ImprovementAction.cs</FileName>
+      <HashCode>AAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAQAAAAAAAAA=</HashCode>
+      <FileName>Tile.cs</FileName>
     </TypeIdentifier>
-  </Delegate>
+    <ShowAsAssociation>
+      <Property Name="Type" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="agricola.RoomTile">
+    <Position X="3.25" Y="4" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Tile.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="agricola.EmptyTile">
+    <Position X="1" Y="4" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Tile.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="agricola.FieldTile">
+    <Position X="5.5" Y="4" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAABAAAAAAAAAAAAIAAAAAAAAACAAAAAAAAAAAA=</HashCode>
+      <FileName>Tile.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="agricola.PastureTile">
+    <Position X="7.75" Y="4" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAIAAQAAAAAAAAAAIAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Tile.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Struct Name="agricola.FenceBorder">
+    <Position X="7.25" Y="1" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Members" Collapsed="true" />
+      <Compartment Name="Fields" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAQAAAAAAAIAAAACACAAAAAAAA=</HashCode>
+      <FileName>Tile.cs</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Interface Name="agricola.Activity" Collapsed="true">
+    <Position X="13.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAEAAgAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Activity.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Enum Name="agricola.ResourceTypes" Collapsed="true">
+    <Position X="13.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAEAAAAAAAAAAAAAAAAAAAAgAAAAAAAAEAAQAAAAAAA=</HashCode>
+      <FileName>ResourceTypes.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="agricola.LivestockTypes" Collapsed="true">
+    <Position X="13.5" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAQAAAAAAAAAAAAAAQIAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>LivestockTypes.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="agricola.PlantTypes" Collapsed="true">
+    <Position X="15.25" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAABAAA=</HashCode>
+      <FileName>PlantTypes.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="agricola.TileTypes" Collapsed="true">
+    <Position X="1.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAABIAAAAAAAAAAAACAAAAAAAAgAA=</HashCode>
+      <FileName>Tile.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="agricola.RoomTypes" Collapsed="true">
+    <Position X="6.25" Y="6.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAQAAAAAAA=</HashCode>
+      <FileName>RoomTypes.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
   <Font Name="Segoe UI" Size="9" />
 </ClassDiagram>

@@ -4,42 +4,22 @@ using System.Text;
 
 namespace agricola
 {
-    public abstract class Activity
+    public interface Activity
     {
+        string Name
+        {
+            get;
+            set;
+        }
+
+        string Description
+        {
+            get;
+            set;
+        }
         /// <summary>
         /// The action that should be taken when the Activity is selected by a player.
         /// </summary>
-        public ActivityAction ActivityAction
-        {
-            get
-            {
-                throw new System.NotImplementedException();
-            }
-            set
-            {
-            }
-        }
-
-        public int Name
-        {
-            get
-            {
-                throw new System.NotImplementedException();
-            }
-            set
-            {
-            }
-        }
-
-        public int Description
-        {
-            get
-            {
-                throw new System.NotImplementedException();
-            }
-            set
-            {
-            }
-        }
+        void ActivityAction();
     }
 }

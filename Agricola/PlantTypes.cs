@@ -4,7 +4,9 @@ using System.Text;
 
 namespace agricola
 {
-    public abstract class Improvement
+    public enum PlantTypes
     {
+        Grain,
+        Vegetable,
     }
 }
