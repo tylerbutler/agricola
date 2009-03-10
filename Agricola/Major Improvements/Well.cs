@@ -4,7 +4,7 @@ using System.Text;
 
 namespace agricola
 {
-    public class MajorImprovement : Improvement
+    public class Well : MajorImprovement
     {
     }
 }
