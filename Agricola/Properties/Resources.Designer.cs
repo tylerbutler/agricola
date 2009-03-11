@@ -66,5 +66,26 @@ namespace agricola.Properties {
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
+        
+        internal static System.Drawing.Bitmap GameBoardBackground1Full {
+            get {
+                object obj = ResourceManager.GetObject("GameBoardBackground1Full", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        internal static System.Drawing.Bitmap GameBoardBackground2Full {
+            get {
+                object obj = ResourceManager.GetObject("GameBoardBackground2Full", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        internal static System.Drawing.Bitmap GameBoardBackground3Full {
+            get {
+                object obj = ResourceManager.GetObject("GameBoardBackground3Full", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
     }
 }

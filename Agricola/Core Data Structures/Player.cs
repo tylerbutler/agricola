@@ -6,6 +6,8 @@ namespace agricola
 {
     public class Player : IResourceContainer
     {
+        private List<MajorImprovement> majorImprovements;
+    
         public Player( string Name )
         {
             throw new System.NotImplementedException();
@@ -172,5 +174,17 @@ namespace agricola
         }
 
         #endregion
+
+        public List<MajorImprovement> MajorImprovements
+        {
+            get
+            {
+                return majorImprovements;
+            }
+            set
+            {
+                this.majorImprovements = value;
+            }
+        }
     }
 }

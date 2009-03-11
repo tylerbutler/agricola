@@ -3,7 +3,7 @@
   <Class Name="agricola.Player" Collapsed="true" BaseTypeListCollapsed="true">
     <Position X="31.75" Y="2" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAEAAAAAAAAQAAAAAAAAAAQgAAQIAAAAEAAQAiYBAAA=</HashCode>
+      <HashCode>AAEAAEAAAAAQAAAAAAAAAAQgAAQIAAAEEAAQAiYBAAA=</HashCode>
       <FileName>Core Data Structures\Player.cs</FileName>
     </TypeIdentifier>
     <Lollipop Position="0.2" Collapsed="true" />

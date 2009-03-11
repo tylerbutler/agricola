@@ -24,6 +24,10 @@ namespace agricola
             }
         }
 
+        /// <summary>
+        /// Creates a tile of the specified type.
+        /// </summary>
+        /// <param name="type">The type of tile to create.</param>
         public static Tile TileFactory( TileTypes type )
         {
             switch( type )
