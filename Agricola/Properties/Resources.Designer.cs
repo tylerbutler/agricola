@@ -60,6 +60,15 @@ namespace agricola.Properties {
             }
         }
         
+        /// <summary>
+        ///   Looks up a localized string similar to Family.
+        /// </summary>
+        internal static string FamilyGameVersionString {
+            get {
+                return ResourceManager.GetString("FamilyGameVersionString", resourceCulture);
+            }
+        }
+        
         internal static System.Drawing.Bitmap FarmBoardBackground {
             get {
                 object obj = ResourceManager.GetObject("FarmBoardBackground", resourceCulture);
@@ -85,6 +94,15 @@ namespace agricola.Properties {
             get {
                 object obj = ResourceManager.GetObject("GameBoardBackground3Full", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Regular.
+        /// </summary>
+        internal static string RegularGameVersionString {
+            get {
+                return ResourceManager.GetString("RegularGameVersionString", resourceCulture);
             }
         }
     }

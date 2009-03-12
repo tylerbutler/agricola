@@ -12,6 +12,7 @@
     <AssemblyName>agricola</AssemblyName>
     <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
+    <StartupObject>agricola.ScratchPad</StartupObject>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -52,14 +53,20 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Actions\ActionDelegate.cs" />
+    <Compile Include="Actions\BuildRoomsorStables.cs" />
+    <Compile Include="Actions\BuildStablesBakeBread.cs" />
+    <Compile Include="Enums\ActionStages.cs" />
+    <Compile Include="Enums\AllResources.cs" />
     <Compile Include="Forms\GameBoardForm.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Forms\GameBoardForm.Designer.cs">
       <DependentUpon>GameBoardForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="Interfaces\IActivity.cs" />
-    <Compile Include="Activities\DayLaborer.cs" />
+    <Compile Include="Core Data Structures\Action.cs" />
+    <Compile Include="Actions\DayLaborer.cs" />
+    <Compile Include="Enums\GameVersion.cs" />
     <Compile Include="Interfaces\IRefillable.cs" />
     <Compile Include="Major Improvements\BasketWeaver.cs" />
     <Compile Include="Core Data Structures\Board.cs" />
@@ -77,7 +84,6 @@
     <Compile Include="Major Improvements\FireplaceExpensive.cs" />
     <Compile Include="GameManager.cs" />
     <Compile Include="Interfaces\IImprovement.cs" />
-    <Compile Include="Interfaces\IResourceContainer.cs" />
     <Compile Include="Enums\LivestockTypes.cs" />
     <Compile Include="Forms\MainForm.cs">
       <SubType>Form</SubType>
@@ -90,6 +96,7 @@
     <Compile Include="Enums\PlantTypes.cs" />
     <Compile Include="Core Data Structures\Player.cs" />
     <Compile Include="Major Improvements\Pottery.cs" />
+    <Compile Include="Actions\PlowField.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Forms\BoardForm.resx">
@@ -125,12 +132,16 @@
     <Compile Include="Major Improvements\StoneOven.cs" />
     <Compile Include="Core Data Structures\Tile.cs" />
     <Compile Include="Major Improvements\Well.cs" />
+    <Compile Include="Actions\StartingPlayer.cs" />
+    <Compile Include="Actions\Take1Grain.cs" />
+    <Compile Include="ScratchPad.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Hofplan_001.jpg" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Assemblies\Bitworthy.Utilities 1.0.dll" />
+    <None Include="app.config" />
     <None Include="Resources\Agricola_board_3.jpg" />
     <None Include="Resources\Agricola_game_board_2.jpg" />
     <None Include="Resources\Agricola_game_board_1.jpg" />
