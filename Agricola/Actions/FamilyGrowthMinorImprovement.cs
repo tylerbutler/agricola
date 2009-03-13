@@ -4,19 +4,17 @@ using System.Text;
 
 namespace agricola
 {
-    public class Take1Grain : Action
+    public class FamilyGrowthMinorImprovement : Action
     {
-        public Take1Grain()
+        public FamilyGrowthMinorImprovement()
             : base()
         {
-            this.Stage = ActionStages.OnBoard;
-            this.Number = 3;
+            this.Stage = ActionStages.Stage2;
         }
-    
+
         public override void TakeAction( Player player, out object data )
         {
-            player.Resources[AllResources.Grain]++;
-            data = null;
+            throw new NotImplementedException();
         }
     }
 }

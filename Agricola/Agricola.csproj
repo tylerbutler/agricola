@@ -56,8 +56,13 @@
     <Compile Include="Actions\ActionDelegate.cs" />
     <Compile Include="Actions\BuildRoomsorStables.cs" />
     <Compile Include="Actions\BuildStablesBakeBread.cs" />
+    <Compile Include="Actions\TakeOccupation3Player.cs" />
+    <Compile Include="Actions\TwoWood.cs" />
     <Compile Include="Enums\ActionStages.cs" />
     <Compile Include="Enums\AllResources.cs" />
+    <Compile Include="Actions\FamilyGrowthMinorImprovement.cs" />
+    <Compile Include="Actions\Fences.cs" />
+    <Compile Include="Actions\Fishing.cs" />
     <Compile Include="Forms\GameBoardForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -92,11 +97,16 @@
       <DependentUpon>MainForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Major Improvements\MajorImprovement.cs" />
+    <Compile Include="Actions\MajorMinorImprovement.cs" />
     <Compile Include="Minor Improvements\MinorImprovement.cs" />
     <Compile Include="Enums\PlantTypes.cs" />
     <Compile Include="Core Data Structures\Player.cs" />
     <Compile Include="Major Improvements\Pottery.cs" />
     <Compile Include="Actions\PlowField.cs" />
+    <Compile Include="Actions\OneClay.cs" />
+    <Compile Include="Actions\OneReed.cs" />
+    <Compile Include="Actions\OneSheep.cs" />
+    <Compile Include="Actions\OneStone.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Forms\BoardForm.resx">
@@ -134,7 +144,13 @@
     <Compile Include="Major Improvements\Well.cs" />
     <Compile Include="Actions\StartingPlayer.cs" />
     <Compile Include="Actions\Take1Grain.cs" />
+    <Compile Include="Actions\RenovationMajorMinorImprovement.cs" />
     <Compile Include="ScratchPad.cs" />
+    <Compile Include="Actions\TakeOccupation.cs" />
+    <Compile Include="Actions\ThreeWood.cs" />
+    <Compile Include="Actions\SowAndOrBakeBread.cs" />
+    <Compile Include="Actions\TakeBuildingResource.cs" />
+    <Compile Include="Actions\TakeTwoBuildingResources.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Hofplan_001.jpg" />

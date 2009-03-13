@@ -9,9 +9,10 @@ namespace agricola
         private ActionDelegate ActionDelegate;
 
         public StartingPlayer()
+            : base()
         {
-            this.ActionStage = ActionStages.OnBoard;
-            this.GameVersion = GameVersion.All;
+            this.Stage = ActionStages.OnBoard;
+            this.Number = 2;
 
             if( Properties.Settings.Default.GameVersion == Properties.Resources.FamilyGameVersionString )
             {

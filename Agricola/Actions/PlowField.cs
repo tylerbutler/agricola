@@ -7,9 +7,10 @@ namespace agricola
     public class PlowField : Action
     {
         public PlowField()
+            : base()
         {
-            this.ActionStage = ActionStages.OnBoard;
-            this.GameVersion = GameVersion.All;
+            this.Stage = ActionStages.OnBoard;
+            this.Number = 4;
         }
     
         public override void TakeAction( Player player, out object data )

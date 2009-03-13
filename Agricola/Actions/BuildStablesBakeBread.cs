@@ -7,10 +7,13 @@ namespace agricola
     public class BuildStablesBakeBread : Action
     {
         public BuildStablesBakeBread()
+            : base()
         {
-            this.ActionStage = ActionStages.OnBoard;
-            this.GameVersion = ( GameVersion.Family | GameVersion.TwoPlayer | GameVersion.FivePlayer | GameVersion.FourPlayer | GameVersion.Regular | GameVersion.ThreePlayer );
-            this.GameVersion = GameVersion.All;
+            this.Stage = ActionStages.OnBoard;
+            
+            // Action is available in all game versions, but NOT the regular game (only family version)
+            this.GameVersion = GameVersion.AllButRegular();
+            this.Number = 5;
         }
 
         public override void TakeAction( Player player, out object data )

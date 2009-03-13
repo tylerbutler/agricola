@@ -7,9 +7,10 @@ namespace agricola
     public class BuildRoomsorStables : Action
     {
         public BuildRoomsorStables()
+            : base()
         {
-            this.ActionStage = ActionStages.OnBoard;
-            this.GameVersion = GameVersion.All;
+            this.Stage = ActionStages.OnBoard;
+            this.Number = 1;
         }
 
         public override void TakeAction( Player player, out object data )

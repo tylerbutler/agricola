@@ -14,17 +14,27 @@ namespace agricola
         ThreePlayer = 1 << 3,
         FourPlayer = 1 << 4,
         FivePlayer = 1 << 5,
-        All = (1 << 6) - 1,
+        All = ( 1 << 6 ) - 1,
     }
 
     /// <summary>
     /// This extension method checks if a given GameVersion Enum flag is set in an enum value.
     /// </summary>
-    public static class GameVersionEnumHelperFoo
+    public static class GameVersionEnumHelper
     {
-        public static bool HasFlag( this GameVersion item, GameVersion query )
+        public static bool IsAvailableInGameVersion( this GameVersion item, GameVersion query )
         {
             return ( ( item & query ) == query );
+        }
+
+        public static GameVersion AllButRegular( this GameVersion item )
+        {
+            return (GameVersion)( (int)GameVersion.All - (int)GameVersion.Regular );
+        }
+
+        public static GameVersion AllButFamily( this GameVersion item )
+        {
+            return (GameVersion)( (int)GameVersion.All - (int)GameVersion.Family );
         }
     }
 }

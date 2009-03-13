@@ -31,5 +31,14 @@ namespace agricola.Properties {
                 return ((string)(this["GameVersion"]));
             }
         }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("1")]
+        public int NumPlayers {
+            get {
+                return ((int)(this["NumPlayers"]));
+            }
+        }
     }
 }

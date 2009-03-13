@@ -20,15 +20,14 @@ namespace agricola
                 resources = value;
             }
         }
-    
+
         public Player( string Name )
         {
-            throw new System.NotImplementedException();
-        }
-
-        public Player( string Name, bool StartofGame )
-        {
-            throw new System.NotImplementedException();
+            this.Name = Name;
+            foreach( AllResources resource in Enum.GetValues( typeof( AllResources ) ) )
+            {
+                this.Resources.Add( resource, 0 );
+            }
         }
 
         public int FamilyMembers
