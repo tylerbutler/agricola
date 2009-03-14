@@ -6,19 +6,11 @@ namespace agricola
 {
     public class TwoWood : Action, IRefillable
     {
-        public TwoWood()
+        public TwoWood( GameComplexityLevel complexity )
         {
-            this.Stage = ActionStages.OnBoard;
-            this.GameVersion = NumPlayersForAction.ThreePlayer;
-
-            if( Properties.Settings.Default.GameVersion == Properties.Resources.FamilyGameVersionString )
-            {
-                this.GameComplexityLevel = GameComplexityLevel.Family;
-            }
-            else if( Properties.Settings.Default.GameVersion == Properties.Resources.RegularGameVersionString )
-            {
-                this.GameComplexityLevel = GameComplexityLevel.Regular;
-            }
+            this.Stage = ActionStages.StartingCard;
+            this.NumPlayersForAction = NumPlayersForAction.ThreePlayer;
+            this.Complexity = complexity;
 
             this.Resources.Add( AllResources.Wood, 0 );
         }

@@ -8,7 +8,7 @@ namespace agricola
 {
     public abstract class Action
     {
-        private SerializableDictionary<AllResources, int> resources;
+        private SerializableDictionary<AllResources, int> resources = new SerializableDictionary<AllResources,int>();
 
         public SerializableDictionary<AllResources, int> Resources
         {
@@ -42,7 +42,7 @@ namespace agricola
         /// <param name="data">An optional parameter that Actions can use to pass back data to the caller. Not all Actions will use this data.</param>
         public abstract void TakeAction( Player player, out object data );
 
-        public NumPlayersForAction GameVersion
+        public NumPlayersForAction NumPlayersForAction
         {
             get
             {
@@ -72,9 +72,10 @@ namespace agricola
         public Action()
         {
             // No defaults; subclasses should set the properties appropriately
+            Name = GetType().ToString();
         }
 
-        public GameComplexityLevel GameComplexityLevel
+        public GameComplexityLevel Complexity
         {
             get
             {
@@ -82,6 +83,19 @@ namespace agricola
             }
             set
             {
+            }
+        }
+
+        private string name;
+        public string Name
+        {
+            get
+            {
+                return name;
+            }
+            private set
+            {
+                name = value;
             }
         }
     }

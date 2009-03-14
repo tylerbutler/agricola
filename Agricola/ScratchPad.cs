@@ -9,8 +9,22 @@ namespace agricola
     {
         public static void Main( string[] args )
         {
-            BuildStablesBakeBread b = new BuildStablesBakeBread();
-            NumPlayersForAction v = b.GameVersion;
+            List<Action> ActionDeck = new List<Action>();
+
+            // Three Player Action Cards
+            ActionDeck.Add( new TwoWood( GameComplexityLevel.Family ) );
+            ActionDeck.Add( new TwoWood( GameComplexityLevel.Regular ) );
+            ActionDeck.Add( new TakeBuildingResource( GameComplexityLevel.Family ) );
+            ActionDeck.Add( new TakeBuildingResource( GameComplexityLevel.Regular ) );
+            ActionDeck.Add( new TakeTwoBuildingResources() );
+            ActionDeck.Add( new TakeOccupation3Player() );
+            ActionDeck.Add( new OneClay( GameComplexityLevel.Family, NumPlayersForAction.ThreePlayer ) );
+            ActionDeck.Add( new OneClay( GameComplexityLevel.Regular, NumPlayersForAction.ThreePlayer ) );
+
+            foreach( Action card in ActionDeck )
+            {
+                Console.WriteLine( card.Name );
+            }
         }
     }
 }

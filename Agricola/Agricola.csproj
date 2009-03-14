@@ -32,10 +32,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Bitworthy.Utilities 1.0, Version=1.0.0.0, Culture=neutral, PublicKeyToken=851d9d8f7d21ede4, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>Assemblies\Bitworthy.Utilities 1.0.dll</HintPath>
-    </Reference>
+    <Reference Include="Bitworthy.Utilities, Version=1.0.0.0, Culture=neutral, PublicKeyToken=851d9d8f7d21ede4, processorArchitecture=MSIL" />
     <Reference Include="System" />
     <Reference Include="System.Core">
       <RequiredTargetFramework>3.5</RequiredTargetFramework>
@@ -70,8 +67,8 @@
     </Compile>
     <Compile Include="Core Data Structures\Action.cs" />
     <Compile Include="Actions\DayLaborer.cs" />
-    <Compile Include="Enums\GameVersion.cs" />
-    <Compile Include="GameComplexityLevel.cs" />
+    <Compile Include="Enums\NumPlayersForAction.cs" />
+    <Compile Include="Enums\GameComplexityLevel.cs" />
     <Compile Include="Interfaces\IRefillable.cs" />
     <Compile Include="Major Improvements\BasketWeaver.cs" />
     <Compile Include="Core Data Structures\Board.cs" />
@@ -156,11 +153,14 @@
     <None Include="Resources\Hofplan_001.jpg" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Assemblies\Bitworthy.Utilities 1.0.dll" />
     <None Include="app.config" />
+    <None Include="Class Diagrams\Actions Only.cd" />
     <None Include="Resources\Agricola_board_3.jpg" />
     <None Include="Resources\Agricola_game_board_2.jpg" />
     <None Include="Resources\Agricola_game_board_1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Assemblies\Bitworthy.Utilities.dll" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

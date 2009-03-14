@@ -6,33 +6,12 @@ namespace agricola
 {
     public class OneClay : Action, IRefillable
     {
-        public OneClay()
+        public OneClay( GameComplexityLevel complexity, NumPlayersForAction numPlayers )
             : base()
         {
             this.Stage = ActionStages.OnBoard;
-            switch( Properties.Settings.Default.NumPlayers )
-            {
-                case 1:
-                case 2:
-                    this.GameVersion = NumPlayersForAction.All;
-                    this.Number = 8;
-                    break;
-                case 3:
-                    this.GameVersion = NumPlayersForAction.ThreePlayer;
-                    this.Number = 12;
-                    break;
-                default:
-                    break;
-            }
-
-            if( Properties.Settings.Default.GameVersion == Properties.Resources.FamilyGameVersionString )
-            {
-                this.GameComplexityLevel = GameComplexityLevel.Family;
-            }
-            else if( Properties.Settings.Default.GameVersion == Properties.Resources.RegularGameVersionString )
-            {
-                this.GameComplexityLevel = GameComplexityLevel.Regular;
-            }
+            this.Complexity = complexity;
+            this.NumPlayersForAction = numPlayers;
 
             this.Resources.Add( AllResources.Clay, 0 );
         }

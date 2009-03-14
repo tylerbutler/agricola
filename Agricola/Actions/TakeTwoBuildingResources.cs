@@ -8,8 +8,9 @@ namespace agricola
     {
         public TakeTwoBuildingResources()
         {
-            this.Stage = ActionStages.OnBoard;
-            this.GameVersion = NumPlayersForAction.ThreePlayer;
+            this.Stage = ActionStages.StartingCard;
+            this.NumPlayersForAction = NumPlayersForAction.ThreePlayer;
+            this.Complexity = GameComplexityLevel.Family;
         }
     
         public override void TakeAction( Player player, out object data )
