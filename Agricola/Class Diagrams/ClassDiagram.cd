@@ -158,12 +158,13 @@
   <Class Name="agricola.Action">
     <Position X="30.5" Y="1" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAIAAAQCAAAEAAAAAAQgAAAAAIAAgACAAAAAA=</HashCode>
+      <HashCode>AEAAAAAAIAAAQCAAAEAAAAAAQgAAAAAIAAgACAAAAAA=</HashCode>
       <FileName>Core Data Structures\Action.cs</FileName>
     </TypeIdentifier>
     <ShowAsAssociation>
       <Property Name="Stage" />
       <Property Name="GameVersion" />
+      <Property Name="GameComplexityLevel" />
     </ShowAsAssociation>
   </Class>
   <Class Name="agricola.BuildRoomsorStables">
@@ -395,15 +396,22 @@
   <Enum Name="agricola.GameVersion">
     <Position X="33.5" Y="1" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAEAAAAAAEAAAAAAAAIACAAEABJA=</HashCode>
+      <HashCode>AAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAIACAAEAAJA=</HashCode>
       <FileName>Enums\GameVersion.cs</FileName>
     </TypeIdentifier>
   </Enum>
+  <Enum Name="agricola.GameComplexityLevel">
+    <Position X="24.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAIAAAAAABAA=</HashCode>
+      <FileName>GameComplexityLevel.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
   <Delegate Name="agricola.ActionDelegate" Collapsed="true">
-    <Position X="55.5" Y="7.25" Width="1.5" />
+    <Position X="35.5" Y="1.75" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAgA=</HashCode>
-      <FileName>Actions\ActionDelegate.cs</FileName>
+      <FileName>Core Data Structures\Action.cs</FileName>
     </TypeIdentifier>
   </Delegate>
   <Font Name="Segoe UI" Size="9" />

@@ -53,7 +53,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Actions\ActionDelegate.cs" />
     <Compile Include="Actions\BuildRoomsorStables.cs" />
     <Compile Include="Actions\BuildStablesBakeBread.cs" />
     <Compile Include="Actions\TakeOccupation3Player.cs" />
@@ -72,6 +71,7 @@
     <Compile Include="Core Data Structures\Action.cs" />
     <Compile Include="Actions\DayLaborer.cs" />
     <Compile Include="Enums\GameVersion.cs" />
+    <Compile Include="GameComplexityLevel.cs" />
     <Compile Include="Interfaces\IRefillable.cs" />
     <Compile Include="Major Improvements\BasketWeaver.cs" />
     <Compile Include="Core Data Structures\Board.cs" />

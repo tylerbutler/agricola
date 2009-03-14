@@ -13,11 +13,11 @@ namespace agricola
 
             if( Properties.Settings.Default.GameVersion == Properties.Resources.FamilyGameVersionString )
             {
-                this.GameVersion = this.GameVersion | GameVersion.Family;
+                this.GameComplexityLevel = GameComplexityLevel.Family;
             }
             else if( Properties.Settings.Default.GameVersion == Properties.Resources.RegularGameVersionString )
             {
-                this.GameVersion = this.GameVersion | GameVersion.Regular;
+                this.GameComplexityLevel = GameComplexityLevel.Regular;
             }
         }
 

@@ -8,13 +8,11 @@ namespace agricola
     public enum GameVersion
     {
         None = 0, // Do not use
-        Regular = 1 << 0,
-        Family = 1 << 1,
-        TwoPlayer = 1 << 2,
-        ThreePlayer = 1 << 3,
-        FourPlayer = 1 << 4,
-        FivePlayer = 1 << 5,
-        All = ( 1 << 6 ) - 1,
+        TwoPlayer = 1 << 1,
+        ThreePlayer = 1 << 2,
+        FourPlayer = 1 << 3,
+        FivePlayer = 1 << 4,
+        All = ( 1 << 5 ) - 1,
     }
 
     /// <summary>
@@ -27,14 +25,14 @@ namespace agricola
             return ( ( item & query ) == query );
         }
 
-        public static GameVersion AllButRegular( this GameVersion item )
-        {
-            return (GameVersion)( (int)GameVersion.All - (int)GameVersion.Regular );
-        }
+        //public static GameVersion AllButRegular( this GameVersion item )
+        //{
+        //    return (GameVersion)( (int)GameVersion.All - (int)GameVersion.Regular );
+        //}
 
-        public static GameVersion AllButFamily( this GameVersion item )
-        {
-            return (GameVersion)( (int)GameVersion.All - (int)GameVersion.Family );
-        }
+        //public static GameVersion AllButFamily( this GameVersion item )
+        //{
+        //    return (GameVersion)( (int)GameVersion.All - (int)GameVersion.Family );
+        //}
     }
 }

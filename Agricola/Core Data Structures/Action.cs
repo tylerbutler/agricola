@@ -71,7 +71,24 @@ namespace agricola
 
         public Action()
         {
-            this.GameVersion = GameVersion.All;
+            // No defaults; subclasses should set the properties appropriately
+        }
+
+        public GameComplexityLevel GameComplexityLevel
+        {
+            get
+            {
+                throw new System.NotImplementedException();
+            }
+            set
+            {
+            }
         }
     }
+
+    /// <summary>
+    /// This delegate is used for Actions that change based on the version of the game that is being played.
+    /// </summary>
+    public delegate void ActionDelegate( Player player, out object data );
+
 }

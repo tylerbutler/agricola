@@ -9,7 +9,7 @@ namespace agricola
         public TakeTwoBuildingResources()
         {
             this.Stage = ActionStages.OnBoard;
-            this.GameVersion = GameVersion.ThreePlayer | GameVersion.Family;
+            this.GameVersion = GameVersion.ThreePlayer;
         }
     
         public override void TakeAction( Player player, out object data )
