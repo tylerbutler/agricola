@@ -5,7 +5,7 @@ using System.Text;
 namespace agricola
 {
     [FlagsAttribute]
-    public enum GameVersion
+    public enum NumPlayersForAction
     {
         None = 0, // Do not use
         TwoPlayer = 1 << 1,
@@ -18,9 +18,9 @@ namespace agricola
     /// <summary>
     /// This extension method checks if a given GameVersion Enum flag is set in an enum value.
     /// </summary>
-    public static class GameVersionEnumHelper
+    public static class NumPlayersForActionHelper
     {
-        public static bool IsAvailableInGameVersion( this GameVersion item, GameVersion query )
+        public static bool IsAvailableInGameVersion( this NumPlayersForAction item, NumPlayersForAction query )
         {
             return ( ( item & query ) == query );
         }

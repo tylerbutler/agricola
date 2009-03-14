@@ -12,7 +12,7 @@ namespace agricola
             this.Stage = ActionStages.OnBoard;
             
             // Action is available in all game versions, but NOT the regular game (only family version)
-            this.GameVersion = GameVersion.All;
+            this.GameVersion = NumPlayersForAction.All;
             this.GameComplexityLevel = GameComplexityLevel.Family;
             this.Number = 5;
         }

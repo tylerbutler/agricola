@@ -42,11 +42,11 @@ namespace agricola
         /// <param name="data">An optional parameter that Actions can use to pass back data to the caller. Not all Actions will use this data.</param>
         public abstract void TakeAction( Player player, out object data );
 
-        public GameVersion GameVersion
+        public NumPlayersForAction GameVersion
         {
             get
             {
-                return (GameVersion)this.gameVersion;
+                return (NumPlayersForAction)this.gameVersion;
             }
             set
             {

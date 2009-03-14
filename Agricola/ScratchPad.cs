@@ -10,7 +10,7 @@ namespace agricola
         public static void Main( string[] args )
         {
             BuildStablesBakeBread b = new BuildStablesBakeBread();
-            GameVersion v = b.GameVersion;
+            NumPlayersForAction v = b.GameVersion;
         }
     }
 }

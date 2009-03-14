@@ -10,7 +10,7 @@ namespace agricola
             : base()
         {
             this.Stage = ActionStages.OnBoard;
-            this.GameVersion = GameVersion.ThreePlayer;
+            this.GameVersion = NumPlayersForAction.ThreePlayer;
             this.Cost.Add( AllResources.Food, 2 );
         }
 

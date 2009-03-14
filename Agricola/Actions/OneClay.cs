@@ -14,11 +14,11 @@ namespace agricola
             {
                 case 1:
                 case 2:
-                    this.GameVersion = GameVersion.All;
+                    this.GameVersion = NumPlayersForAction.All;
                     this.Number = 8;
                     break;
                 case 3:
-                    this.GameVersion = GameVersion.ThreePlayer;
+                    this.GameVersion = NumPlayersForAction.ThreePlayer;
                     this.Number = 12;
                     break;
                 default:

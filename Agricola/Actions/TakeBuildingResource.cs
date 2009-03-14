@@ -9,7 +9,7 @@ namespace agricola
         public TakeBuildingResource()
         {
             this.Stage = ActionStages.OnBoard;
-            this.GameVersion = GameVersion.ThreePlayer;
+            this.GameVersion = NumPlayersForAction.ThreePlayer;
 
             if( Properties.Settings.Default.GameVersion == Properties.Resources.FamilyGameVersionString )
             {
