@@ -60,6 +60,20 @@ namespace agricola.Properties {
             }
         }
         
+        internal static System.Drawing.Icon ass {
+            get {
+                object obj = ResourceManager.GetObject("ass", resourceCulture);
+                return ((System.Drawing.Icon)(obj));
+            }
+        }
+        
+        internal static System.Drawing.Icon cow {
+            get {
+                object obj = ResourceManager.GetObject("cow", resourceCulture);
+                return ((System.Drawing.Icon)(obj));
+            }
+        }
+        
         /// <summary>
         ///   Looks up a localized string similar to Family.
         /// </summary>
@@ -97,12 +111,26 @@ namespace agricola.Properties {
             }
         }
         
+        internal static System.Drawing.Icon pig {
+            get {
+                object obj = ResourceManager.GetObject("pig", resourceCulture);
+                return ((System.Drawing.Icon)(obj));
+            }
+        }
+        
         /// <summary>
         ///   Looks up a localized string similar to Regular.
         /// </summary>
         internal static string RegularGameVersionString {
             get {
                 return ResourceManager.GetString("RegularGameVersionString", resourceCulture);
+            }
+        }
+        
+        internal static System.Drawing.Icon sheep {
+            get {
+                object obj = ResourceManager.GetObject("sheep", resourceCulture);
+                return ((System.Drawing.Icon)(obj));
             }
         }
     }

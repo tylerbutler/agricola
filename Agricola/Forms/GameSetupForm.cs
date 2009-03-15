@@ -9,16 +9,11 @@ using System.Windows.Forms;
 
 namespace agricola
 {
-    public partial class GameBoardForm : Form
+    public partial class GameSetupForm : Form
     {
-        public GameBoardForm()
+        public GameSetupForm()
         {
             InitializeComponent();
-        }
-
-        new public void Show()
-        {
-            base.Show();
         }
     }
 }

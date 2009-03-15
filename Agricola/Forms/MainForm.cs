@@ -15,5 +15,14 @@ namespace agricola
         {
             InitializeComponent();
         }
+
+        private void newGameToolStripMenuItem_Click( object sender, EventArgs e )
+        {
+            DialogResult result = new GameSetupForm().ShowDialog();
+            if( result == DialogResult.OK )
+            {
+                new GameBoardForm().Show();
+            }
+        }
     }
 }

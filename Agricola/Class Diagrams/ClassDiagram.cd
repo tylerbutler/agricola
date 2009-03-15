@@ -145,7 +145,7 @@
   <Class Name="agricola.Properties.Resources" Collapsed="true">
     <Position X="35.25" Y="1.5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAEAAAAAAAAAQAAAAABEAAAAQAAAAgABACBAAAAAIA=</HashCode>
+      <HashCode>AAAEAAAAAAAAAQIAEAABEQAAAQAAAAgABECBAAAAAIA=</HashCode>
     </TypeIdentifier>
   </Class>
   <Class Name="agricola.Action">
@@ -249,6 +249,13 @@
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAIAAAAAABAA=</HashCode>
       <FileName>Enums\GameComplexityLevel.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="agricola.PlayerColors">
+    <Position X="1.75" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAAAAgAAAAAAAAAABAAAAAAAAAAAABAAAAA=</HashCode>
+      <FileName>PlayerColors.cs</FileName>
     </TypeIdentifier>
   </Enum>
   <Delegate Name="agricola.ActionDelegate" Collapsed="true">
