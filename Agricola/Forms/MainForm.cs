@@ -11,6 +11,8 @@ namespace agricola
 {
     public partial class MainForm : Form
     {
+        GameManager gm;
+
         public MainForm()
         {
             InitializeComponent();
@@ -18,10 +20,42 @@ namespace agricola
 
         private void newGameToolStripMenuItem_Click( object sender, EventArgs e )
         {
-            DialogResult result = new GameSetupForm().ShowDialog();
+            GameSetupForm setup = new GameSetupForm();
+            DialogResult result = setup.ShowDialog();
             if( result == DialogResult.OK )
             {
-                new GameBoardForm().Show();
+                gm = new GameManager();
+
+                // get all the players from the dialog
+                int numPlayers = Properties.Settings.Default.NumPlayers;
+
+                if( numPlayers >= 1 )
+                {
+                    Player p = new Player( setup.player1NameBox.Text );
+                    gm.Players.Add( p );
+                }
+                if( numPlayers >= 2 )
+                {
+                    Player p = new Player( setup.player2NameBox.Text );
+                    gm.Players.Add( p );
+                }
+                if( numPlayers >= 3 )
+                {
+                    Player p = new Player( setup.player3NameBox.Text );
+                    gm.Players.Add( p );
+                }
+                if( numPlayers >= 4 )
+                {
+                    Player p = new Player( setup.player4NameBox.Text );
+                    gm.Players.Add( p );
+                }
+                if( numPlayers >= 5 )
+                {
+                    Player p = new Player( setup.player5NameBox.Text );
+                    gm.Players.Add( p );
+                }
+
+                gm.StartGame();
             }
         }
     }

@@ -9,13 +9,6 @@ namespace agricola
     {
         public static void Main( string[] args )
         {
-            List<Action> ActionDeck = new List<Action>();
-
-
-            foreach( Action card in ActionDeck )
-            {
-                Console.WriteLine( card.Name );
-            }
         }
     }
 }

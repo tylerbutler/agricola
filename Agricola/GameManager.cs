@@ -23,12 +23,45 @@ namespace agricola
             }
         }
 
-        public List<Action> GetStartingCards( NumPlayersForAction numPlayers, GameComplexityLevel complexity )
+        private List<Action> GetStartingCards( NumPlayersForAction numPlayers, GameComplexityLevel complexity )
         {
-            IEnumerable<Action> r = from c in StartingCards
-                                    where ( c.NumPlayersForAction == numPlayers && c.Complexity == complexity )
-                                    select c;
-            return (List<Action>)r;
+            if( numPlayers == NumPlayersForAction.None )
+            {
+                return new List<Action>();
+            }
+            else
+            {
+                IEnumerable<Action> r = from c in StartingCards
+                                        where ( c.NumPlayersForAction == numPlayers && c.Complexity == complexity )
+                                        select c;
+                return (List<Action>)r;
+            }
+        }
+
+        private List<Action> GetStartingCards( int numPlayers, GameComplexityLevel complexity )
+        {
+            NumPlayersForAction np = (NumPlayersForAction)( 1 << ( numPlayers - 1 ) );
+            return GetStartingCards( np, complexity );
+        }
+
+        public void StartGame()
+        {
+            this.StartingCards = GetStartingCards( Properties.Settings.Default.NumPlayers, (GameComplexityLevel)Enum.Parse( typeof( GameComplexityLevel ), Properties.Settings.Default.GameVersion ) );
+            this.ShuffleCards();
+
+            throw new System.NotImplementedException();
+        }
+
+        private void ShuffleCards()
+        {
+            foreach( List<Action> cards in ActionDeck.Values )
+            {
+                var q = from a in cards
+                        orderby Guid.NewGuid()
+                        select a;
+                List<Action> r = q.ToList<Action>();
+            }
+            throw new System.NotImplementedException();
         }
 
         public GameManager()

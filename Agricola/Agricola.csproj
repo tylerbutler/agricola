@@ -12,7 +12,8 @@
     <AssemblyName>agricola</AssemblyName>
     <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
-    <StartupObject>agricola.Program</StartupObject>
+    <StartupObject>agricola.ScratchPad</StartupObject>
+    <ApplicationIcon>sheep.ico</ApplicationIcon>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -77,6 +78,7 @@
     <Compile Include="Actions\FamilyGrowthMinorImprovement.cs" />
     <Compile Include="Actions\Fences.cs" />
     <Compile Include="Actions\Fishing.cs" />
+    <Compile Include="Core Data Structures\FamilyMember.cs" />
     <Compile Include="Forms\GameBoardForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -128,7 +130,7 @@
     <Compile Include="Actions\OneReed.cs" />
     <Compile Include="Actions\OneSheep.cs" />
     <Compile Include="Actions\OneStone.cs" />
-    <Compile Include="PlayerColors.cs" />
+    <Compile Include="Enums\PlayerColors.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Forms\BoardForm.resx">
@@ -194,6 +196,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Assemblies\Bitworthy.Utilities.dll" />
+    <Content Include="sheep.ico" />
     <None Include="Resources\sheep.ico" />
     <None Include="Resources\pig.ico" />
     <None Include="Resources\cow.ico" />

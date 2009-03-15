@@ -8,6 +8,18 @@ namespace agricola
     {
         private List<MajorImprovement> majorImprovements;
         private Dictionary<AllResources, int> resources;
+        private List<FamilyMember> familyMembers;
+        public List<FamilyMember> FamilyMembers
+        {
+            get
+            {
+                return familyMembers;
+            }
+            set
+            {
+                familyMembers = value;
+            }
+        }
 
         public Dictionary<AllResources, int> Resources
         {
@@ -27,17 +39,6 @@ namespace agricola
             foreach( AllResources resource in Enum.GetValues( typeof( AllResources ) ) )
             {
                 this.Resources.Add( resource, 0 );
-            }
-        }
-
-        public int FamilyMembers
-        {
-            get
-            {
-                throw new System.NotImplementedException();
-            }
-            set
-            {
             }
         }
 

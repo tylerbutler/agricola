@@ -8,7 +8,7 @@ namespace agricola
 {
     public abstract class Action
     {
-        private SerializableDictionary<AllResources, int> resources = new SerializableDictionary<AllResources,int>();
+        private SerializableDictionary<AllResources, int> resources = new SerializableDictionary<AllResources, int>();
 
         public SerializableDictionary<AllResources, int> Resources
         {

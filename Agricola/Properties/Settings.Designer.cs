@@ -23,21 +23,27 @@ namespace agricola.Properties {
             }
         }
         
-        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("Family")]
         public string GameVersion {
             get {
                 return ((string)(this["GameVersion"]));
             }
+            set {
+                this["GameVersion"] = value;
+            }
         }
         
-        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("1")]
         public int NumPlayers {
             get {
                 return ((int)(this["NumPlayers"]));
+            }
+            set {
+                this["NumPlayers"] = value;
             }
         }
     }

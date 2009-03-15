@@ -1,16 +1,16 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <ClassDiagram MajorVersion="1" MinorVersion="1" GroupingSetting="Alphabetical" MembersFormat="NameAndType">
-  <Class Name="agricola.Player" Collapsed="true" BaseTypeListCollapsed="true">
-    <Position X="33.5" Y="1.5" Width="1.5" />
+  <Class Name="agricola.Player" BaseTypeListCollapsed="true">
+    <Position X="29.5" Y="4.75" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAEAAIAAAACAAAAAAAAQAAAAAAAAEAAAAACQAAAA=</HashCode>
+      <HashCode>AAAAAEAAIAAEACAAAAAAAAQAAAAAAAAEAAAAACQAAAA=</HashCode>
       <FileName>Core Data Structures\Player.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="agricola.GameManager" Collapsed="true">
+  <Class Name="agricola.GameManager">
     <Position X="33.5" Y="0.5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAABAAAgAAAAIAEAAAAAAEA=</HashCode>
+      <HashCode>AAAAAAgAAAAAAAAAAAAAAAAhAAAgAAAAIAEAAAAAAEA=</HashCode>
       <FileName>GameManager.cs</FileName>
     </TypeIdentifier>
   </Class>
@@ -162,9 +162,19 @@
   </Class>
   <Class Name="agricola.NumPlayersForActionHelper" Collapsed="true">
     <Position X="31.75" Y="1.5" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Members" Collapsed="true" />
+    </Compartments>
     <TypeIdentifier>
       <HashCode>AAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Enums\NumPlayersForAction.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="agricola.FamilyMember">
+    <Position X="34" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BAAAAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Core Data Structures\FamilyMember.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Struct Name="agricola.FenceBorder" Collapsed="true">
@@ -255,7 +265,7 @@
     <Position X="1.75" Y="2" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAACAAAAAAAAAgAAAAAAAAAABAAAAAAAAAAAABAAAAA=</HashCode>
-      <FileName>PlayerColors.cs</FileName>
+      <FileName>Enums\PlayerColors.cs</FileName>
     </TypeIdentifier>
   </Enum>
   <Delegate Name="agricola.ActionDelegate" Collapsed="true">

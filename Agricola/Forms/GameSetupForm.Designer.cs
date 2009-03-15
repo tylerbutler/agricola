@@ -30,6 +30,9 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager( typeof( GameSetupForm ) );
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
+            this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.numPlayersComboBox = new System.Windows.Forms.ComboBox();
             this.playersGroupBox = new System.Windows.Forms.GroupBox();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.label1 = new System.Windows.Forms.Label();
@@ -54,6 +57,8 @@
             this.cancelButton = new System.Windows.Forms.Button();
             this.okButton = new System.Windows.Forms.Button();
             this.flowLayoutPanel1.SuspendLayout();
+            this.groupBox2.SuspendLayout();
+            this.panel2.SuspendLayout();
             this.playersGroupBox.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
             this.groupBox1.SuspendLayout();
@@ -62,6 +67,7 @@
             // 
             // flowLayoutPanel1
             // 
+            this.flowLayoutPanel1.Controls.Add( this.groupBox2 );
             this.flowLayoutPanel1.Controls.Add( this.playersGroupBox );
             this.flowLayoutPanel1.Controls.Add( this.groupBox1 );
             this.flowLayoutPanel1.Controls.Add( this.cancelButton );
@@ -69,13 +75,48 @@
             this.flowLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.flowLayoutPanel1.Location = new System.Drawing.Point( 0, 0 );
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Size = new System.Drawing.Size( 268, 296 );
+            this.flowLayoutPanel1.Size = new System.Drawing.Size( 268, 353 );
             this.flowLayoutPanel1.TabIndex = 0;
+            // 
+            // groupBox2
+            // 
+            this.groupBox2.Controls.Add( this.panel2 );
+            this.groupBox2.Location = new System.Drawing.Point( 3, 3 );
+            this.groupBox2.Name = "groupBox2";
+            this.groupBox2.Size = new System.Drawing.Size( 260, 51 );
+            this.groupBox2.TabIndex = 1;
+            this.groupBox2.TabStop = false;
+            this.groupBox2.Text = "Number of Players";
+            // 
+            // panel2
+            // 
+            this.panel2.Controls.Add( this.numPlayersComboBox );
+            this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel2.Location = new System.Drawing.Point( 3, 16 );
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size( 254, 32 );
+            this.panel2.TabIndex = 0;
+            // 
+            // numPlayersComboBox
+            // 
+            this.numPlayersComboBox.FormattingEnabled = true;
+            this.numPlayersComboBox.Items.AddRange( new object[] {
+            "1",
+            "2",
+            "3",
+            "4",
+            "5"} );
+            this.numPlayersComboBox.Location = new System.Drawing.Point( 7, 4 );
+            this.numPlayersComboBox.Name = "numPlayersComboBox";
+            this.numPlayersComboBox.Size = new System.Drawing.Size( 61, 21 );
+            this.numPlayersComboBox.Sorted = true;
+            this.numPlayersComboBox.TabIndex = 0;
+            this.numPlayersComboBox.Text = "1";
             // 
             // playersGroupBox
             // 
             this.playersGroupBox.Controls.Add( this.tableLayoutPanel1 );
-            this.playersGroupBox.Location = new System.Drawing.Point( 3, 3 );
+            this.playersGroupBox.Location = new System.Drawing.Point( 3, 60 );
             this.playersGroupBox.Name = "playersGroupBox";
             this.playersGroupBox.Size = new System.Drawing.Size( 260, 182 );
             this.playersGroupBox.TabIndex = 0;
@@ -293,7 +334,7 @@
             // groupBox1
             // 
             this.groupBox1.Controls.Add( this.panel1 );
-            this.groupBox1.Location = new System.Drawing.Point( 3, 191 );
+            this.groupBox1.Location = new System.Drawing.Point( 3, 248 );
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size( 260, 69 );
             this.groupBox1.TabIndex = 1;
@@ -319,7 +360,7 @@
             this.familyRadioButton.Size = new System.Drawing.Size( 54, 17 );
             this.familyRadioButton.TabIndex = 0;
             this.familyRadioButton.TabStop = true;
-            this.familyRadioButton.Text = "Family";
+            this.familyRadioButton.Text = Properties.Resources.FamilyGameVersionString;
             this.familyRadioButton.UseVisualStyleBackColor = true;
             // 
             // regularRadioButton
@@ -330,13 +371,13 @@
             this.regularRadioButton.Name = "regularRadioButton";
             this.regularRadioButton.Size = new System.Drawing.Size( 62, 17 );
             this.regularRadioButton.TabIndex = 1;
-            this.regularRadioButton.Text = "Regular";
+            this.regularRadioButton.Text = Properties.Resources.RegularGameVersionString;
             this.regularRadioButton.UseVisualStyleBackColor = true;
             // 
             // cancelButton
             // 
             this.cancelButton.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-            this.cancelButton.Location = new System.Drawing.Point( 3, 266 );
+            this.cancelButton.Location = new System.Drawing.Point( 3, 323 );
             this.cancelButton.Name = "cancelButton";
             this.cancelButton.Size = new System.Drawing.Size( 127, 23 );
             this.cancelButton.TabIndex = 2;
@@ -346,23 +387,26 @@
             // okButton
             // 
             this.okButton.DialogResult = System.Windows.Forms.DialogResult.OK;
-            this.okButton.Location = new System.Drawing.Point( 136, 266 );
+            this.okButton.Location = new System.Drawing.Point( 136, 323 );
             this.okButton.Name = "okButton";
             this.okButton.Size = new System.Drawing.Size( 127, 23 );
             this.okButton.TabIndex = 3;
             this.okButton.Text = "OK";
             this.okButton.UseVisualStyleBackColor = true;
+            this.okButton.Click += new System.EventHandler( this.okButton_Click );
             // 
             // GameSetupForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF( 6F, 13F );
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size( 268, 296 );
+            this.ClientSize = new System.Drawing.Size( 268, 353 );
             this.Controls.Add( this.flowLayoutPanel1 );
             this.Icon = ( (System.Drawing.Icon)( resources.GetObject( "$this.Icon" ) ) );
             this.Name = "GameSetupForm";
             this.Text = "New Game";
             this.flowLayoutPanel1.ResumeLayout( false );
+            this.groupBox2.ResumeLayout( false );
+            this.panel2.ResumeLayout( false );
             this.playersGroupBox.ResumeLayout( false );
             this.tableLayoutPanel1.ResumeLayout( false );
             this.tableLayoutPanel1.PerformLayout();
@@ -383,21 +427,24 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.ComboBox player1ColorBox;
-        private System.Windows.Forms.ComboBox player2ColorBox;
-        private System.Windows.Forms.ComboBox player3ColorBox;
-        private System.Windows.Forms.ComboBox player4ColorBox;
-        private System.Windows.Forms.ComboBox player5ColorBox;
-        private System.Windows.Forms.TextBox player1NameBox;
-        private System.Windows.Forms.TextBox player2NameBox;
-        private System.Windows.Forms.TextBox player3NameBox;
-        private System.Windows.Forms.TextBox player4NameBox;
-        private System.Windows.Forms.TextBox player5NameBox;
+        public System.Windows.Forms.ComboBox player1ColorBox;
+        public System.Windows.Forms.ComboBox player2ColorBox;
+        public System.Windows.Forms.ComboBox player3ColorBox;
+        public System.Windows.Forms.ComboBox player4ColorBox;
+        public System.Windows.Forms.ComboBox player5ColorBox;
+        public System.Windows.Forms.TextBox player1NameBox;
+        public System.Windows.Forms.TextBox player2NameBox;
+        public System.Windows.Forms.TextBox player3NameBox;
+        public System.Windows.Forms.TextBox player4NameBox;
+        public System.Windows.Forms.TextBox player5NameBox;
         private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.RadioButton regularRadioButton;
-        private System.Windows.Forms.RadioButton familyRadioButton;
+        public System.Windows.Forms.RadioButton regularRadioButton;
+        public System.Windows.Forms.RadioButton familyRadioButton;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Button cancelButton;
         private System.Windows.Forms.Button okButton;
+        private System.Windows.Forms.GroupBox groupBox2;
+        private System.Windows.Forms.Panel panel2;
+        public System.Windows.Forms.ComboBox numPlayersComboBox;
     }
 }
