@@ -4,12 +4,12 @@ using System.Text;
 
 namespace agricola
 {
-    public class BuildRoomsorStables : Action
+    public class FamilyGrowthWithoutSpace : Action
     {
-        public BuildRoomsorStables()
+        public FamilyGrowthWithoutSpace()
             : base()
         {
-            this.Stage = ActionStages.OnBoard;
+            this.Stage = ActionStages.Stage5;
         }
 
         public override void TakeAction( Player player, out object data )

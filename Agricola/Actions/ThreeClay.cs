@@ -4,18 +4,17 @@ using System.Text;
 
 namespace agricola
 {
-    public class OneClay : Action, IRefillable
+    public class ThreeClay : Action, IRefillable
     {
-        public OneClay( ActionStages stage, GameComplexityLevel complexity, NumPlayersForAction numPlayers )
-            : base()
+        public ThreeClay( GameComplexityLevel complexity )
         {
-            this.Stage = ActionStages.OnBoard;
+            this.Stage = ActionStages.StartingCard;
+            this.NumPlayersForAction = NumPlayersForAction.FivePlayer;
             this.Complexity = complexity;
-            this.NumPlayersForAction = numPlayers;
 
             this.Resources.Add( AllResources.Clay, 0 );
         }
-
+    
         public override void TakeAction( Player player, out object data )
         {
             player.Resources[AllResources.Clay] += this.Resources[AllResources.Clay];
@@ -27,7 +26,7 @@ namespace agricola
 
         public void Refill()
         {
-            this.Resources[AllResources.Clay]++;
+            this.Resources[AllResources.Clay] += 3;
         }
 
         #endregion

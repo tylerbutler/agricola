@@ -13,7 +13,6 @@ namespace agricola
             : base()
         {
             this.Stage = ActionStages.OnBoard;
-            this.Number = 6;
 
             if( Properties.Settings.Default.GameVersion == Properties.Resources.FamilyGameVersionString )
             {

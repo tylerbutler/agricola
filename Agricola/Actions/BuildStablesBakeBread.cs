@@ -10,11 +10,8 @@ namespace agricola
             : base()
         {
             this.Stage = ActionStages.OnBoard;
-            
-            // Action is available in all game versions, but NOT the regular game (only family version)
             this.NumPlayersForAction = NumPlayersForAction.All;
             this.Complexity = GameComplexityLevel.Family;
-            this.Number = 5;
         }
 
         public override void TakeAction( Player player, out object data )

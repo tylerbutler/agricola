@@ -46,43 +46,33 @@ namespace agricola
         {
             get
             {
-                return (NumPlayersForAction)this.gameVersion;
+                return (NumPlayersForAction)this.numPlayersForAction;
             }
             set
             {
-                this.gameVersion = (int)value;
+                this.numPlayersForAction = (int)value;
             }
         }
 
-        private int gameVersion;
-        private int number;
-
-        public int Number
-        {
-            get
-            {
-                return this.number;
-            }
-            set
-            {
-                this.number = value;
-            }
-        }
+        private int numPlayersForAction;
 
         public Action()
         {
-            // No defaults; subclasses should set the properties appropriately
+            this.Complexity = GameComplexityLevel.All;
+            this.NumPlayersForAction = NumPlayersForAction.All;
             Name = GetType().ToString();
         }
 
+        private GameComplexityLevel complexity;
         public GameComplexityLevel Complexity
         {
             get
             {
-                throw new System.NotImplementedException();
+                return this.complexity;
             }
             set
             {
+                this.complexity = value;
             }
         }
 
@@ -96,6 +86,19 @@ namespace agricola
             private set
             {
                 name = value;
+            }
+        }
+
+        private Player isUsedBy;
+        public Player IsUsedBy
+        {
+            get
+            {
+                return isUsedBy;
+            }
+            set
+            {
+                isUsedBy = value;
             }
         }
     }

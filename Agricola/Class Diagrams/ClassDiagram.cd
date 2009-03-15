@@ -1,21 +1,21 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <ClassDiagram MajorVersion="1" MinorVersion="1" GroupingSetting="Alphabetical" MembersFormat="NameAndType">
   <Class Name="agricola.Player" Collapsed="true" BaseTypeListCollapsed="true">
-    <Position X="54.75" Y="1.5" Width="1.5" />
+    <Position X="33.5" Y="1.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAEAAIAAAACAAAAAAAAQAAAAAAAAEAAAAACQAAAA=</HashCode>
       <FileName>Core Data Structures\Player.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="agricola.GameManager" Collapsed="true">
-    <Position X="54.75" Y="0.5" Width="1.5" />
+    <Position X="33.5" Y="0.5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA=</HashCode>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAABAAAgAAAAIAEAAAAAAEA=</HashCode>
       <FileName>GameManager.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="agricola.MajorImprovement" Collapsed="true">
-    <Position X="16.75" Y="9.5" Width="1.5" />
+    <Position X="19" Y="0.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>ACAAAAAEAAAAAAAEAAAAAAAAAAAAAAAAAAAAQAAAAAA=</HashCode>
       <FileName>Major Improvements\MajorImprovement.cs</FileName>
@@ -23,7 +23,7 @@
     <Lollipop Position="0.2" />
   </Class>
   <Class Name="agricola.MinorImprovement" Collapsed="true" BaseTypeListCollapsed="true">
-    <Position X="56.5" Y="0.5" Width="1.5" />
+    <Position X="35.25" Y="0.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>ACAAAAAEAAAAAAAEAAAAAAAAAAAAAAAAAAAAQAAAAAA=</HashCode>
       <FileName>Minor Improvements\MinorImprovement.cs</FileName>
@@ -31,134 +31,127 @@
     <Lollipop Position="0.2" Collapsed="true" />
   </Class>
   <Class Name="agricola.Board" Collapsed="true">
-    <Position X="53" Y="0.5" Width="1.5" />
+    <Position X="31.75" Y="0.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAgAAAAIAAAAAAAAAAAA=</HashCode>
       <FileName>Core Data Structures\Board.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="agricola.Tile" Collapsed="true">
-    <Position X="9.25" Y="12.5" Width="1.5" />
+    <Position X="11.5" Y="3.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAQAAAAAAAAAAAAABAAAAAQAAAAAAAAA=</HashCode>
       <FileName>Core Data Structures\Tile.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="agricola.RoomTile" Collapsed="true">
-    <Position X="6" Y="13.75" Width="1.5" />
+    <Position X="8.25" Y="4.75" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgA=</HashCode>
       <FileName>Core Data Structures\Tile.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="agricola.EmptyTile" Collapsed="true">
-    <Position X="8.25" Y="13.75" Width="1.5" />
+    <Position X="10.5" Y="4.75" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Core Data Structures\Tile.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="agricola.FieldTile" Collapsed="true">
-    <Position X="10.5" Y="13.75" Width="1.5" />
+    <Position X="12.75" Y="4.75" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAABAAAAAQAAAAAAIAAAACAAAACAAAAAgAAAAAA=</HashCode>
       <FileName>Core Data Structures\Tile.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="agricola.PastureTile" Collapsed="true">
-    <Position X="12.75" Y="13.75" Width="1.5" />
+    <Position X="15" Y="4.75" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAACAAAAAAIAAQAAAAAAAAAAIAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Core Data Structures\Tile.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="agricola.FireplaceCheap" Collapsed="true">
-    <Position X="20.25" Y="10.75" Width="1.5" />
+    <Position X="22.5" Y="1.75" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Major Improvements\FireplaceCheap.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="agricola.FireplaceExpensive" Collapsed="true">
-    <Position X="24.75" Y="10.75" Width="1.5" />
+    <Position X="27" Y="1.75" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Major Improvements\FireplaceExpensive.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="agricola.CookingHearthCheap" Collapsed="true">
-    <Position X="6.75" Y="10.75" Width="1.5" />
+    <Position X="9" Y="1.75" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Major Improvements\CookingHearthCheap.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="agricola.CookingHearthExpensive" Collapsed="true">
-    <Position X="11.25" Y="10.75" Width="1.5" />
+    <Position X="13.5" Y="1.75" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Major Improvements\CookingHearthExpensive.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="agricola.StoneOven" Collapsed="true">
-    <Position X="15.75" Y="10.75" Width="1.5" />
+    <Position X="18" Y="1.75" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Major Improvements\StoneOven.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="agricola.ClayOven" Collapsed="true">
-    <Position X="18" Y="10.75" Width="1.5" />
+    <Position X="20.25" Y="1.75" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Major Improvements\ClayOven.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="agricola.Well" Collapsed="true">
-    <Position X="22.5" Y="10.75" Width="1.5" />
+    <Position X="24.75" Y="1.75" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Major Improvements\Well.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="agricola.Joinery" Collapsed="true">
-    <Position X="27" Y="10.75" Width="1.5" />
+    <Position X="29.25" Y="1.75" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Major Improvements\Joinery.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="agricola.BasketWeaver" Collapsed="true">
-    <Position X="9" Y="10.75" Width="1.5" />
+    <Position X="11.25" Y="1.75" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Major Improvements\BasketWeaver.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="agricola.Pottery" Collapsed="true">
-    <Position X="13.5" Y="10.75" Width="1.5" />
+    <Position X="15.75" Y="1.75" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Major Improvements\Pottery.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="agricola.DayLaborer" BaseTypeListCollapsed="true">
-    <Position X="21.25" Y="6.75" Width="1.5" />
-    <TypeIdentifier>
-      <HashCode>AAAAAAACAAAAAAAAAAAAAAAAQEAAAAAIAAAAAAAAAAA=</HashCode>
-      <FileName>Actions\DayLaborer.cs</FileName>
-    </TypeIdentifier>
-  </Class>
   <Class Name="agricola.Properties.Resources" Collapsed="true">
-    <Position X="56.5" Y="1.5" Width="1.5" />
+    <Position X="35.25" Y="1.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAEAAAAAAAAAQAAAAABEAAAAQAAAAgABACBAAAAAIA=</HashCode>
     </TypeIdentifier>
   </Class>
   <Class Name="agricola.Action">
-    <Position X="29.25" Y="3.5" Width="1.5" />
+    <Position X="9" Y="8.25" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAIAAAQCAAAEAAAAQAQgAEEAAIAAgAAAAAAEA=</HashCode>
+      <HashCode>AAACAAAAIAAAACAAAAAAAAQAQgAEEBIAAAgAQAAAAEA=</HashCode>
       <FileName>Core Data Structures\Action.cs</FileName>
     </TypeIdentifier>
     <ShowAsAssociation>
@@ -167,232 +160,99 @@
       <Property Name="Complexity" />
     </ShowAsAssociation>
   </Class>
-  <Class Name="agricola.BuildRoomsorStables">
-    <Position X="25.75" Y="6.75" Width="1.5" />
-    <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>Actions\BuildRoomsorStables.cs</FileName>
-    </TypeIdentifier>
-  </Class>
-  <Class Name="agricola.StartingPlayer">
-    <Position X="30.25" Y="6.75" Width="1.5" />
-    <TypeIdentifier>
-      <HashCode>AAAAAAACAAAAAAAAAAAAAAAAQEAAAAAIAAAAAAAAAAA=</HashCode>
-      <FileName>Actions\StartingPlayer.cs</FileName>
-    </TypeIdentifier>
-  </Class>
-  <Class Name="agricola.Take1Grain">
-    <Position X="39.25" Y="6.75" Width="1.5" />
-    <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>Actions\Take1Grain.cs</FileName>
-    </TypeIdentifier>
-  </Class>
-  <Class Name="agricola.PlowField">
-    <Position X="12.25" Y="6.75" Width="1.5" />
-    <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>Actions\PlowField.cs</FileName>
-    </TypeIdentifier>
-  </Class>
-  <Class Name="agricola.BuildStablesBakeBread">
-    <Position X="46" Y="6.75" Width="1.5" />
-    <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>Actions\BuildStablesBakeBread.cs</FileName>
-    </TypeIdentifier>
-  </Class>
   <Class Name="agricola.NumPlayersForActionHelper" Collapsed="true">
-    <Position X="53" Y="1.5" Width="1.5" />
+    <Position X="31.75" Y="1.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Enums\NumPlayersForAction.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="agricola.TakeOccupation3Player">
-    <Position X="50.5" Y="6.75" Width="1.5" />
-    <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAABAAQAAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>Actions\TakeOccupation3Player.cs</FileName>
-      <NewMemberFileName>Actions\TakeOccupation.cs</NewMemberFileName>
-    </TypeIdentifier>
-  </Class>
-  <Class Name="agricola.OneClay">
-    <Position X="32.5" Y="6.75" Width="1.5" />
-    <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAQAAAAAAAQAAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>Actions\OneClay.cs</FileName>
-    </TypeIdentifier>
-    <Lollipop Position="0.2" />
-  </Class>
-  <Class Name="agricola.OneReed">
-    <Position X="43.75" Y="6.75" Width="1.5" />
-    <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAQAAAAAAAQAAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>Actions\OneReed.cs</FileName>
-    </TypeIdentifier>
-    <Lollipop Position="0.2" />
-  </Class>
-  <Class Name="agricola.Fishing">
-    <Position X="48.25" Y="6.75" Width="1.5" />
-    <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAQAAAAAAAQAAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>Actions\Fishing.cs</FileName>
-    </TypeIdentifier>
-    <Lollipop Position="0.2" />
-  </Class>
-  <Class Name="agricola.ThreeWood" Collapsed="true">
-    <Position X="23.5" Y="6.75" Width="1.5" />
-    <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAQAAAAAAAQAAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>Actions\ThreeWood.cs</FileName>
-    </TypeIdentifier>
-    <Lollipop Position="0.2" />
-  </Class>
-  <Class Name="agricola.TakeTwoBuildingResources">
-    <Position X="14.5" Y="6.75" Width="1.5" />
-    <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>Actions\TakeTwoBuildingResources.cs</FileName>
-    </TypeIdentifier>
-  </Class>
-  <Class Name="agricola.OneSheep">
-    <Position X="10" Y="6.75" Width="1.5" />
-    <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAQAAAAAAAQAAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>Actions\OneSheep.cs</FileName>
-    </TypeIdentifier>
-    <Lollipop Position="0.2" />
-  </Class>
-  <Class Name="agricola.MajorMinorImprovement">
-    <Position X="19" Y="6.75" Width="1.5" />
-    <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>Actions\MajorMinorImprovement.cs</FileName>
-    </TypeIdentifier>
-  </Class>
-  <Class Name="agricola.Fences">
-    <Position X="28" Y="6.75" Width="1.5" />
-    <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>Actions\Fences.cs</FileName>
-    </TypeIdentifier>
-  </Class>
-  <Class Name="agricola.SowAndOrBakeBread">
-    <Position X="41.5" Y="6.75" Width="1.5" />
-    <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>Actions\SowAndOrBakeBread.cs</FileName>
-    </TypeIdentifier>
-  </Class>
-  <Class Name="agricola.OneStone">
-    <Position X="34.75" Y="6.75" Width="1.5" />
-    <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAQAAAAAAAQAAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>Actions\OneStone.cs</FileName>
-    </TypeIdentifier>
-    <Lollipop Position="0.2" />
-  </Class>
-  <Class Name="agricola.RenovationMajorMinorImprovement">
-    <Position X="37" Y="6.75" Width="1.5" />
-    <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAABAAQAAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>Actions\RenovationMajorMinorImprovement.cs</FileName>
-    </TypeIdentifier>
-  </Class>
-  <Class Name="agricola.FamilyGrowthMinorImprovement">
-    <Position X="16.75" Y="6.75" Width="1.5" />
-    <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>Actions\FamilyGrowthMinorImprovement.cs</FileName>
-    </TypeIdentifier>
-  </Class>
   <Struct Name="agricola.FenceBorder" Collapsed="true">
-    <Position X="53" Y="3.75" Width="1.5" />
+    <Position X="31.75" Y="2.75" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAQAAAAAAAIAAAACACAAAAAAAA=</HashCode>
       <FileName>Core Data Structures\Tile.cs</FileName>
     </TypeIdentifier>
   </Struct>
   <Interface Name="agricola.IImprovement" Collapsed="true">
-    <Position X="53" Y="5" Width="1.5" />
+    <Position X="31.75" Y="4" Width="1.5" />
     <TypeIdentifier>
       <HashCode>ACAAAAAEAAAAAAAEAAAAAAAAAAAAAAAAAAAAQAAAAAA=</HashCode>
       <FileName>Interfaces\IImprovement.cs</FileName>
     </TypeIdentifier>
   </Interface>
   <Interface Name="agricola.IRefillable" Collapsed="true">
-    <Position X="54.75" Y="5" Width="1.5" />
+    <Position X="33.5" Y="4" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Interfaces\IRefillable.cs</FileName>
     </TypeIdentifier>
   </Interface>
   <Enum Name="agricola.ResourceTypes" Collapsed="true">
-    <Position X="53" Y="6.75" Width="1.5" />
+    <Position X="31.75" Y="5.75" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAEAAAAAAAAAAAAAAAAAAAAgAAAAAAAAEAAQAAAAAAA=</HashCode>
       <FileName>Enums\ResourceTypes.cs</FileName>
     </TypeIdentifier>
   </Enum>
   <Enum Name="agricola.LivestockTypes" Collapsed="true">
-    <Position X="54.75" Y="6" Width="1.5" />
+    <Position X="33.5" Y="5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAQAAAAAAAAAAAAAAQIAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Enums\LivestockTypes.cs</FileName>
     </TypeIdentifier>
   </Enum>
   <Enum Name="agricola.PlantTypes" Collapsed="true">
-    <Position X="56.5" Y="6" Width="1.5" />
+    <Position X="35.25" Y="5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAABAAA=</HashCode>
       <FileName>Enums\PlantTypes.cs</FileName>
     </TypeIdentifier>
   </Enum>
   <Enum Name="agricola.TileTypes" Collapsed="true">
-    <Position X="56.5" Y="6.75" Width="1.5" />
+    <Position X="35.25" Y="5.75" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAABIAAAAAAAAAAAACAAAAAAAAgAA=</HashCode>
       <FileName>Core Data Structures\Tile.cs</FileName>
     </TypeIdentifier>
   </Enum>
   <Enum Name="agricola.RoomTypes" Collapsed="true">
-    <Position X="54.75" Y="6.75" Width="1.5" />
+    <Position X="33.5" Y="5.75" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAQAAAAAAA=</HashCode>
       <FileName>Enums\RoomTypes.cs</FileName>
     </TypeIdentifier>
   </Enum>
   <Enum Name="agricola.AllResources" Collapsed="true">
-    <Position X="53" Y="6" Width="1.5" />
+    <Position X="31.75" Y="5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAEAAAAAAAAQEAAAAAAAAAAgAAQIAAAAEAAQAgABAAA=</HashCode>
       <FileName>Enums\AllResources.cs</FileName>
     </TypeIdentifier>
   </Enum>
   <Enum Name="agricola.ActionStages">
-    <Position X="26.25" Y="0.5" Width="1.5" />
+    <Position X="9" Y="13" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAgIAAAAAAAAAAAAAAAAAAAAAgAAAAAAAA=</HashCode>
       <FileName>Enums\ActionStages.cs</FileName>
     </TypeIdentifier>
   </Enum>
   <Enum Name="agricola.NumPlayersForAction">
-    <Position X="32.25" Y="3.75" Width="1.5" />
+    <Position X="12" Y="9" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAIACAAEAAJA=</HashCode>
       <FileName>Enums\NumPlayersForAction.cs</FileName>
     </TypeIdentifier>
   </Enum>
   <Enum Name="agricola.GameComplexityLevel">
-    <Position X="26.25" Y="4" Width="1.5" />
+    <Position X="6" Y="9.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAIAAAAAABAA=</HashCode>
       <FileName>Enums\GameComplexityLevel.cs</FileName>
     </TypeIdentifier>
   </Enum>
   <Delegate Name="agricola.ActionDelegate" Collapsed="true">
-    <Position X="53" Y="7.75" Width="1.5" />
+    <Position X="31.75" Y="6.75" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAgA=</HashCode>
       <FileName>Core Data Structures\Action.cs</FileName>

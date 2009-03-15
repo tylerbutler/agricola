@@ -4,21 +4,21 @@ using System.Text;
 
 namespace agricola
 {
-    public class Fishing : Action, IRefillable
+    public class BuildOneRoomOrTravelingPlayers : Action, IRefillable
     {
-        public Fishing()
+        public BuildOneRoomOrTravelingPlayers( GameComplexityLevel complexity )
             : base()
         {
-            this.Stage = ActionStages.OnBoard;
+            this.Stage = ActionStages.StartingCard;
+            this.NumPlayersForAction = NumPlayersForAction.FivePlayer;
+            this.Complexity = complexity;
 
             this.Resources.Add( AllResources.Food, 0 );
         }
 
         public override void TakeAction( Player player, out object data )
         {
-            player.Resources[AllResources.Food] += this.Resources[AllResources.Food];
-            this.Resources[AllResources.Food] = 0;
-            data = null;
+            throw new NotImplementedException();
         }
 
         #region IRefillable Members
@@ -29,5 +29,6 @@ namespace agricola
         }
 
         #endregion
+
     }
 }

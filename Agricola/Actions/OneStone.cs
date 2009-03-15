@@ -6,10 +6,10 @@ namespace agricola
 {
     public class OneStone : Action, IRefillable
     {
-        public OneStone()
+        public OneStone( ActionStages stage )
             : base()
         {
-            this.Stage = ActionStages.Stage2;
+            this.Stage = stage;
             this.Resources.Add( AllResources.Stone, 0 );
         }
 

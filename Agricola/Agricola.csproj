@@ -52,6 +52,24 @@
   <ItemGroup>
     <Compile Include="Actions\BuildRoomsorStables.cs" />
     <Compile Include="Actions\BuildStablesBakeBread.cs" />
+    <Compile Include="Actions\BuildOneRoomOrTravelingPlayers.cs" />
+    <Compile Include="Actions\RenovationThenFences.cs" />
+    <Compile Include="Actions\PlowFieldAndSow.cs" />
+    <Compile Include="Actions\FamilyGrowthWithoutSpace.cs" />
+    <Compile Include="Actions\OneCattle.cs" />
+    <Compile Include="Actions\Take1Vegetable.cs" />
+    <Compile Include="Actions\OneWildBoard.cs" />
+    <Compile Include="Actions\SheepBoarCattle.cs" />
+    <Compile Include="Actions\FourWood.cs" />
+    <Compile Include="Actions\ThreeClay.cs" />
+    <Compile Include="Actions\TakeTwoBuildingResourcesOrFamilyGrowth.cs" />
+    <Compile Include="Actions\TakeOccupationOrFamilyGrowth.cs" />
+    <Compile Include="Actions\ReedStoneWood.cs" />
+    <Compile Include="Actions\TravelingPlayers.cs" />
+    <Compile Include="Actions\ReedStoneFood.cs" />
+    <Compile Include="Actions\TakeOccupation4Player.cs" />
+    <Compile Include="Actions\OneWood.cs" />
+    <Compile Include="Actions\TwoClay.cs" />
     <Compile Include="Actions\TakeOccupation3Player.cs" />
     <Compile Include="Actions\TwoWood.cs" />
     <Compile Include="Enums\ActionStages.cs" />

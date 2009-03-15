@@ -4,20 +4,19 @@ using System.Text;
 
 namespace agricola
 {
-    public class OneReed : Action, IRefillable
+    public class OneCattle : Action, IRefillable
     {
-        public OneReed()
+        public OneCattle()
             : base()
         {
-            this.Stage = ActionStages.OnBoard;
-
-            this.Resources.Add( AllResources.Reed, 0 );
+            this.Stage = ActionStages.Stage4;
+            this.Resources.Add( AllResources.Cattle, 0 );
         }
 
         public override void TakeAction( Player player, out object data )
         {
-            player.Resources[AllResources.Reed] += this.Resources[AllResources.Reed];
-            this.Resources[AllResources.Reed] = 0;
+            player.Resources[AllResources.Cattle] += this.Resources[AllResources.Cattle];
+            this.Resources[AllResources.Cattle] = 0;
             data = null;
         }
 
@@ -25,7 +24,7 @@ namespace agricola
 
         public void Refill()
         {
-            this.Resources[AllResources.Reed]++;
+            this.Resources[AllResources.Cattle]++;
         }
 
         #endregion

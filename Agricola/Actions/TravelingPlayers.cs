@@ -4,12 +4,14 @@ using System.Text;
 
 namespace agricola
 {
-    public class Fishing : Action, IRefillable
+    public class TravelingPlayers : Action, IRefillable
     {
-        public Fishing()
+        public TravelingPlayers( GameComplexityLevel complexity )
             : base()
         {
-            this.Stage = ActionStages.OnBoard;
+            this.Stage = ActionStages.StartingCard;
+            this.Complexity = complexity;
+            this.NumPlayersForAction = NumPlayersForAction.FourPlayer;
 
             this.Resources.Add( AllResources.Food, 0 );
         }

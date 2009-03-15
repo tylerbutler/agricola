@@ -4,12 +4,14 @@ using System.Text;
 
 namespace agricola
 {
-    public class ThreeWood : Action, IRefillable
+    public class OneWood : Action, IRefillable
     {
-        public ThreeWood()
+        public OneWood( GameComplexityLevel complexity )
             : base()
         {
-            this.Stage = ActionStages.OnBoard;
+            this.Stage = ActionStages.StartingCard;
+            this.NumPlayersForAction = NumPlayersForAction.FourPlayer;
+            this.Complexity = complexity;
 
             this.Resources.Add( AllResources.Wood, 0 );
         }
@@ -25,7 +27,7 @@ namespace agricola
 
         public void Refill()
         {
-            this.Resources[AllResources.Wood] += 3;
+            this.Resources[AllResources.Stone]++;
         }
 
         #endregion

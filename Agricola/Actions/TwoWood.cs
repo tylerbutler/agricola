@@ -6,10 +6,10 @@ namespace agricola
 {
     public class TwoWood : Action, IRefillable
     {
-        public TwoWood( GameComplexityLevel complexity )
+        public TwoWood( GameComplexityLevel complexity, NumPlayersForAction numPlayers )
         {
             this.Stage = ActionStages.StartingCard;
-            this.NumPlayersForAction = NumPlayersForAction.ThreePlayer;
+            this.NumPlayersForAction = numPlayers;
             this.Complexity = complexity;
 
             this.Resources.Add( AllResources.Wood, 0 );

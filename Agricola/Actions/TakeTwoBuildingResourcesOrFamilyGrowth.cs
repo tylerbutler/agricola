@@ -4,15 +4,15 @@ using System.Text;
 
 namespace agricola
 {
-    public class TakeTwoBuildingResources : Action
+    public class TakeTwoBuildingResourcesOrFamilyGrowth : Action
     {
-        public TakeTwoBuildingResources( NumPlayersForAction numPlayers )
+        public TakeTwoBuildingResourcesOrFamilyGrowth()
         {
             this.Stage = ActionStages.StartingCard;
-            this.NumPlayersForAction = numPlayers;
+            this.NumPlayersForAction = NumPlayersForAction.FivePlayer;
             this.Complexity = GameComplexityLevel.Family;
         }
-    
+
         public override void TakeAction( Player player, out object data )
         {
             throw new NotImplementedException();

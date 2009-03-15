@@ -10,7 +10,6 @@ namespace agricola
             : base()
         {
             this.Stage = ActionStages.OnBoard;
-            this.Number = 4;
         }
     
         public override void TakeAction( Player player, out object data )

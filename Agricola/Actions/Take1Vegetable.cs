@@ -4,17 +4,18 @@ using System.Text;
 
 namespace agricola
 {
-    public class BuildRoomsorStables : Action
+    public class Take1Vegetable : Action
     {
-        public BuildRoomsorStables()
+        public Take1Vegetable()
             : base()
         {
-            this.Stage = ActionStages.OnBoard;
+            this.Stage = ActionStages.Stage3;
         }
-
+    
         public override void TakeAction( Player player, out object data )
         {
-            throw new NotImplementedException();
+            player.Resources[AllResources.Vegetable]++;
+            data = null;
         }
     }
 }
